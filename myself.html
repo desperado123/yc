@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web GIS</title>
+    <style>
+        *{margin:0;padding:0;}
+        li{list-style:none;}
+        a{text-decoration: none;}
+        body{
+            min-width: 1365px;
+            min-height: 600px;
+            position: relative;
+        }
+        #left-content{
+            width: 270px;
+            height: 630px;
+            background-color: #2196f3;
+        }
+        #left-content div{
+            position: absolute;
+            top: 105px;
+            left: 50px;
+            width: 160px;
+            height: 160px;
+            border-radius: 160px;
+            background-color: #4dabf6;
+        }
+        #left-content div .logo{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 140px;
+            height: 140px;
+            border-radius: 140px;
+            background: url("14.jpg") no-repeat;
+            background-size: 140px 140px;
+        }
+        #left-content ul{
+            position: absolute;
+            top: 260px;
+            left: 95px;
+        }
+        #left-content ul li{
+            cursor: pointer;
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1em;
+            color: #fff;
+        }
+        #left-content ul li:hover{
+            color: red;
+        }
+        #left-content ul li .profile{
+            display: none;
+            position: absolute;
+            top: -260px;
+            left: 175px;
+            width: 1095px;
+            height: 630px;
+            border-radius: 0;
+            background: url('2.jpg') no-repeat;
+            background-size: 1095px 630px;
+        }
+        #left-content ul li .profile li{
+            text-indent: 2em;
+            margin-top:20px;
+            font-size: 16px;
+            color: #000;
+            letter-spacing: 0;
+        }
+        #left-content ul li:nth-child(1):hover .profile{
+            display: block;
+            z-index: 10;
+        }
+        #left-content ul li .exe{
+            display: none;
+            position: absolute;
+            top: -260px;
+            left: 175px;
+            width: 1095px;
+            height: 630px;
+            border-radius: 0;
+            background: url('ahh.jpg') no-repeat;
+            background-size: 1095px 630px;
+        }
+        #left-content ul li .exe p{
+            margin-top: 20px;
+            text-indent: 2em;
+            font-size: 18px;
+            letter-spacing: 0;
+            color: #000;
+        }
+        #left-content ul li:nth-child(2):hover .exe{
+            display: block;
+            z-index: 10;
+        }
+        #left-content ul li .school{
+            display: none;
+            position: absolute;
+            top: -260px;
+            left: 175px;
+            width: 1095px;
+            height: 630px;
+            border-radius: 0;
+            background: url('jnxj.jpg') no-repeat;
+            background-size: 1095px 630px;
+        }
+        #left-content ul li .school p{
+            margin-top: 20px;
+            text-indent: 2em;
+            font-size: 18px;
+            letter-spacing: 0;
+            color: #000;
+        }
+        
+       #left-content ul li:nth-child(3):hover .school{
+            display: block;
+            z-index: 10;
+        }
+        #left-content ul li .hometown{
+            display: none;
+            position: absolute;
+            top: -260px;
+            left: 175px;
+            width: 1095px;
+            height: 630px;
+            border-radius: 0;
+            background: url('4.jpg') no-repeat;
+            background-size: 1095px 630px;
+        }
+        #left-content ul li .hometown p{
+            margin-top: 20px;
+            text-indent: 2em;
+            font-size: 18px;
+            letter-spacing: 0;
+            color: #000;
+        }
+        #left-content ul li:nth-child(4):hover .hometown{
+            display: block;
+            z-index: 10;
+        }
+        #right-content{
+            position: absolute;
+            top: -20px;
+            left: 270px;
+            width: 1095px;
+            height: 630px;
+        }
+        #right-content .first-bg{
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 1095px;
+            height: 630px;
+            background: url('9.jpg') no-repeat;
+            background-size: 1095px 630px;
+            z-index: 1;
+        }
+        #right-content .first-bg h1{
+            margin-top: 200px;
+            margin-left: 100px;
+            letter-spacing: 10px;
+        } 
+    </style>
+</head>
+<body>
+    <div id="left-content">
+        <div>
+            <div class="logo"></div>
+        </div>
+        <ul>
+            <li class="cli">简介
+                <div class="profile">
+                    <ul>
+                        <br><br><br><br>
+                        <li style="font-size: 40px;">杨灿</li>
+                        <li>生日：1995年9月24日</li>
+                        <li>个人信息：160cm/43kg/天蝎座/B型</li>
+                        <li>就读学校及专业：重庆交通大学，测绘工程</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="cli">爱好
+                <div class="exe">
+                    <br><br><br><br>
+                        <h2>阅读</h2>
+                        <p>我喜欢阅读，平时会花大量的时间看书，热爱文学性的小说、哲学、现代诗歌等。</p>
+                        <h2>音乐</h2>
+                        <p>我无法想象没有音乐的世界是什么样子。音乐给我的感悟也不会少于经历本身。从小我就梦想着将来的某一个美好的午后，<br>我要为自己弹唱喜欢的歌，所以大一的时候我自学起了吉他，而我最喜欢的音乐风格是民谣和摇滚，尽管这两种音乐风格天差地<br>别，但是我一样喜欢，如同灵魂里两个极端的自己。</p>
+                        <h2>旅行</h2>
+                        <p>“读万卷书，行万里路”才算真正经历过。</p>
+                        <h2>摄影</h2>
+                        <p>用照片记录每一个值得记录的瞬间。</p>
+                        <h2>运动</h2>
+                        <p>当我们真正享受其中的时候一定是快乐的，运动给我的感觉就是这样。</p>
+                </div>
+            </li>
+            <li class="cli">大学
+                    <div class="school">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <p>重庆交通大学</p><p>虽然这是一所理工科学校，但是这里依然有美丽的李子湖、文艺的图书馆，当然还有美丽的姑娘。<br>冬日的下午，一本书就可以在图书馆消磨一下午，而在篮球场晒晒太阳跑跑步，<br>看看篮球赛也是十分惬意的。我想，你会喜欢上这个不一样的理工科学校的。</p>
+                    </div>
+            </li>
+            <li class="cli">家乡
+                <div class="hometown">
+                     <p>欢迎来到贵州毕节！</p>
+                         <p>我的家乡是贵州毕节的一个小乡村，虽然地处南方，但是因为位于云贵高原，所以刚好造就了这个冬暖夏凉的乡村，<br>夏天的平均温度为25度，               所以是个避暑圣地。而在冬天,雪每年都会如期而至，所以这是个特别的南方小城。这里总是有蓝天白云。<br>而这里的高山也一反江南水乡的温婉，给你广阔的视野，要是你厌倦了城市的高温和喧嚣，那就来毕节吧！</p>
+
+                </div>
+            </li>
+            <li title="交大链接"><button type="button"><a href="http://www.cqjtu.edu.cn">重庆交通大学</a></button></li>
+            <li title="百度地图链接"><button type="button"><a href="http://map.baidu.com">百度地图</a></button></li>
+            <embed src="E:\WebGIS个人网页-杨灿\贰佰-玫瑰.mp3";autostart="true";wide="true";heighe="true";controls="true";autoplay="autoplay";loop="loop"></embed>
+        </ul>
+    </div>
+    <div id="right-content">
+        <div class="first-bg"><h1>我是杨灿</h1></div>
+    </div>
+            
+
+    <script>
+    </script>
+</body>
+</html>
